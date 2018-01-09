@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: push file to sudoers
+    copy:
+      src: ./10-users
+      dest: /etc/sudoers.d/10-users
+
