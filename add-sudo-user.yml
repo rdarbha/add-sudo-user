@@ -6,7 +6,7 @@
     users: ["cumulus"]
   tasks:
   - name: push file to sudoers
-    copy:
-      src: ./10-users
+    template:
+      src: ./10-users.j2
       dest: /etc/sudoers.d/10-users
 
