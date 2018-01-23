@@ -2,6 +2,8 @@
 - hosts: all
   become: yes
   become_method: sudo
+  vars:
+    users: ["cumulus"]
   tasks:
   - name: push file to sudoers
     copy:
