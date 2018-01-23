@@ -1,3 +1,1 @@
-{% for user in users %}
-{{users}} ALL=(ALL) NOPASSWD:ALL
-{% endfor %}
+cumulus ALL=(ALL) NOPASSWD:ALL
