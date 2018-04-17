@@ -9,4 +9,5 @@
     template:
       src: ./10-users.j2
       dest: /etc/sudoers.d/10-users
+      validate: '/usr/sbin/visudo -cf %s'
 
